@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock</title>
+  <link rel="stylesheet" href="styleapp.css">
+</head>
+<body>
+  <div class="title-container">
+    <h1 class="title">World Clock</h1>
+    <div class="current-time-container">
+    <p id="current-time-label">Current Time:</p>
+    <p id="current-time-display"></p>
+  </div>
+</div>
+  <div class="container">
+    <div class="city-select">
+      <label for="city">Select a City:</label>
+      <select id="city">
+        <option value="Beijing" data-timezone="Asia/Shanghai">Beijing</option>
+        <option value="Berlin" data-timezone="Europe/Berlin">Berlin</option>
+        <option value="Dubai" data-timezone="Asia/Dubai">Dubai</option>
+        <option value="London" data-timezone="Europe/London">London</option>
+        <option value="Los Angeles" data-timezone="America/Los_Angeles">Los Angeles</option>
+        <option value="Moscow" data-timezone="Europe/Moscow">Moscow</option>
+        <option value="Mumbai" data-timezone="Asia/Kolkata">Mumbai</option>
+        <option value="New York" data-timezone="America/New_York">New York</option>
+        <option value="Paris" data-timezone="Europe/Paris">Paris</option>
+        <option value="Sydney" data-timezone="Australia/Sydney">Sydney</option>
+        <option value="Tokyo" data-timezone="Asia/Tokyo">Tokyo</option>
+        <option value="Toronto" data-timezone="America/Toronto">Toronto</option>
+      </select>
+    </div>
+    <div id="clocks-container"></div>
+    <div id="custom-cities-container"></div>
+    <button id="add-location-btn">Add Location</button>
+  </div>
+
+  <script src="index1.js"></script>
+</body>
+</html>
